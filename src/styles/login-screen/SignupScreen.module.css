@@ -1,0 +1,78 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formWrapper {
+  max-width: 600px;
+  padding: 70px;
+  background: rgb(0, 0, 0, 0.85);
+}
+.title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inp,
+.submit {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 0.3vw;
+}
+.submit {
+  background-color: #e50914;
+  color: white;
+  transition: 0.3s filter;
+  cursor: pointer;
+}
+.submit:hover {
+  filter: brightness(0.7);
+}
+.inp:focus .inp::after {
+  width: 110%;
+  height: 110%;
+}
+.inp::after {
+  content: " <- BORING";
+  color: red;
+}
+.para {
+  color: gray;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.link {
+  color: #fff;
+  position: relative;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  scale: 0;
+  background-color: #fff;
+  transition: scale 0.3s;
+}
+
+.link:hover::after {
+  scale: 1;
+}
+.demo {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: gray;
+}

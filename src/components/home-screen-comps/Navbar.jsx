@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 export const Navbar = () => {
   const [show, setShow] = useState(false);
-  console.log(show);
 
   const showHideNav = () => {
     window.scrollY > 100 ? setShow(true) : setShow(false);
