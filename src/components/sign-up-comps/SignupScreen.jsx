@@ -2,7 +2,6 @@ import SignupCss from "../../styles/login-screen/SignupScreen.module.css";
 import { useRef } from "react";
 import { signin } from "../../../firebase";
 import { signup } from "../../../firebase";
-import { auth } from "../../../firebase";
 
 export const SignupScreen = () => {
   const emailRef = useRef(null);
@@ -46,7 +45,10 @@ export const SignupScreen = () => {
           <input className={SignupCss.submit} type="submit" value="Sign In" />
         </form>
         <p className={SignupCss.para}>
-          New To Netflix? <a className={SignupCss.link}>Sign up Now</a>
+          New To Netflix?{" "}
+          <a onClick={register} className={SignupCss.link}>
+            Sign up Now
+          </a>
         </p>
         <p className={SignupCss.demo}>demo email: test@example.com</p>
         <p className={SignupCss.demo}>demo password: password</p>

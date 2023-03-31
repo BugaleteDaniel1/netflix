@@ -1,0 +1,74 @@
+.profile {
+  background-color: #111;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.body {
+  color: #fff;
+  padding-top: 100px;
+}
+.profileImage {
+  width: 100px;
+}
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.email {
+  background-color: gray;
+  padding: 10px 0;
+}
+.renewal {
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid gray;
+}
+
+.btn {
+  color: #fff;
+  background-color: #e50914;
+  border-radius: 0.3vw;
+  border: none;
+  padding: 5px 10px;
+  transition: filter 0.3s;
+  cursor: pointer;
+  margin-left: 100px;
+}
+.btn:hover {
+  filter: brightness(0.7);
+}
+
+.signOut {
+  width: 100%;
+  color: #fff;
+  background-color: #e50914;
+  border-radius: 0.3vw;
+  border: none;
+  padding: 5px 10px;
+  transition: filter 0.3s;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+.signOut:hover {
+  filter: brightness(0.7);
+}
+
+.subscription {
+  padding: 10px;
+}
+.package {
+  margin-block: 10px;
+}

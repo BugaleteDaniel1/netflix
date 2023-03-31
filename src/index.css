@@ -5,12 +5,14 @@
 }
 button,
 a {
+  margin: 0;
+  padding: 0;
   font-family: inherit;
 }
 
 .logout {
-  position: fixed;
+  display: none;
   top: 10px;
-  left: 0;
+  left: 50%;
   z-index: 300;
 }

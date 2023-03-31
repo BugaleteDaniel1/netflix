@@ -4,7 +4,7 @@ import LoginCss from "../styles/login-screen/LoginScreen.module.css";
 
 export const LoginScreen = () => {
   const [signIn, setSignIn] = useState(false);
-  console.log(signIn);
+
   const handleSignIn = (e) => {
     e.preventDefault();
     setSignIn(true);

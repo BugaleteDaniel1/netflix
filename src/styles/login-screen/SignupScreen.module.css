@@ -36,14 +36,11 @@
 .submit:hover {
   filter: brightness(0.7);
 }
-.inp:focus .inp::after {
+.inp::after:focus {
   width: 110%;
   height: 110%;
 }
-.inp::after {
-  content: " <- BORING";
-  color: red;
-}
+
 .para {
   color: gray;
   margin-top: 10px;
